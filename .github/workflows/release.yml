@@ -4,10 +4,13 @@ on:
     tags:
       - "*"
 jobs:
-  create-release:
-    name: create-release
+  build-release:
+    name: build-release
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Create artifacts directory
         run: mkdir artifacts
 
@@ -34,27 +37,34 @@ jobs:
       - name: Save version number to artifact
         run: echo "${{ env.SL_VERSION }}" > artifacts/release-version
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: artifacts
-          path: artifacts
-
-  build-release:
-    name: build-release
-    needs: ["create-release"]
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
       - uses: actions/setup-go@v4
         with:
           go-version: ">=1.16.0"
 
+      - name: Build Make 4.4.1
+        shell: bash
+        run: |
+          cd /tmp
+          wget http://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz
+          tar xvf make-4.4.1.tar.gz
+          cd make-4.4.1
+          ./configure
+          make -j4
+          sudo make install
+
       - name: Build workflows
         shell: bash
         run: make
+
+      - name: Move workflows to artifacts
+        shell: bash
+        run: mv pass_rank_amd64.alfredworkflow pass_rank_arm64.alfredworkflow artifacts/
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifacts
+          path: artifacts
 
   publish-release:
     name: publish-release
@@ -68,8 +78,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get release download URL
-        uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v3
         with:
           name: artifacts
           path: artifacts
@@ -99,6 +108,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ env.RELEASE_UPLOAD_URL }}
-          asset_path: ${{ env.ASSET }}
+          asset_path: artifacts/${{ env.ASSET }}
           asset_name: ${{ env.ASSET }}
           asset_content_type: application/octet-stream

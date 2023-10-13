@@ -16,8 +16,19 @@ Type:
 
 Requirements:
 
+- Git
 - GNU Make 4.4+
 - Go 1.16+
+
+Run the following commands:
+
+```
+git clone https://github.com/magnickolas/alfred_pass
+cd alfred_pass
+make
+```
+
+This builds the workflows for both architectures and put them in the repo's directory.
 
 [alfred]: https://www.alfredapp.com/
 [pass]: https://www.passwordstore.org/
