@@ -127,7 +127,7 @@
 				<key>script</key>
 				<string>query="{query}"
 
-pass_rank/pass_rank_arm64 "{query}"</string>
+pass_rank/pass_rank "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -262,7 +262,7 @@ pass_rank/pass_rank_arm64 "{query}"</string>
 				<key>script</key>
 				<string>query="{query}"
 
-pass_rank/pass_rank_arm64 "{query}"</string>
+pass_rank/pass_rank "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -420,7 +420,7 @@ pass_rank/pass_rank_arm64 "{query}"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>0.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/magnickolas/alfred_pass</string>
 </dict>

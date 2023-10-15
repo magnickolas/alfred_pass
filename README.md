@@ -4,7 +4,7 @@
 
 ## Quickstart
 
-Download the workflow for your architecture (amd64 for Intel chips, arm64 for M1/M2) and install it in Alfred.
+Download the workflow for your architecture (amd64 for Intel chips, arm64 for Apple silicon) and install it in Alfred.
 
 Type:
 
@@ -17,7 +17,7 @@ Type:
 Requirements:
 
 - Git
-- GNU Make 4.4+
+- GNU Make
 - Go 1.16+
 
 Run the following commands:
@@ -28,7 +28,9 @@ cd alfred_pass
 make
 ```
 
-This builds the workflows for both architectures and put them in the repo's directory.
+This builds the workflow for your architecture in the repo's directory.
+
+To build for another architecture run `make ARCH=amd64` or `make ARCH=arm64` instead of `make`.
 
 [alfred]: https://www.alfredapp.com/
 [pass]: https://www.passwordstore.org/
