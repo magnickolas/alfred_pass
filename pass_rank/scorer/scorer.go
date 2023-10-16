@@ -20,10 +20,8 @@ func (scorer Scorer) calcSmithWatermanScore(item string) (score int) {
 func (scorer Scorer) containsQueryBoost(item string) (boost float32) {
 	index := strings.Index(item, scorer.Query)
 	boost = 1.0
-	if index == 0 {
+	if index >= 0 {
 		boost = 2.0
-	} else if index > 0 {
-		boost = 1.5
 	}
 	return
 }

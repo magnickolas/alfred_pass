@@ -19,6 +19,7 @@ Requirements:
 - Git
 - GNU Make
 - Go 1.16+
+- Xcode 12.2+
 
 Run the following commands:
 

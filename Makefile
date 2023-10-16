@@ -14,7 +14,7 @@ define get_target_from_binary
 $(lastword $(subst _, ,$1))
 endef
 
-pass_rank/pass_rank_%:
+pass_rank/pass_rank_%: pass_rank/**/*.go
 	$(eval BINARY := $(call get_binary_from_path,$@))
 	$(eval ARCH := $(call get_target_from_binary,$(BINARY)))
 	GOOS=darwin GOARCH=$(ARCH) go build -C pass_rank -o $(BINARY)
