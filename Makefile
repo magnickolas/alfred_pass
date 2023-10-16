@@ -1,6 +1,6 @@
 all: pass.alfredworkflow
 
-pass.alfredworkflow: info.plist icon.png scripts/generate_password.sh scripts/get_otp.sh scripts/get_password.sh pass_rank/pass_rank
+pass.alfredworkflow: info.plist icon.png pass_utils.sh pass_rank/pass_rank
 	zip $@ $^
 
 pass_rank/pass_rank: pass_rank/pass_rank_amd64 pass_rank/pass_rank_arm64

@@ -4,36 +4,12 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.magnickolas.pass</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>217B07BD-20C8-4A2F-A650-5389B0301211</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>44F6D9A0-5BFE-4D55-9E56-F883A6FC040B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>7ACF8549-8A1E-4C28-ADBC-A897C258182E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>980DF2FC-141B-4D1A-8930-6789BB028C99</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>9E150117-97A7-4F17-98A9-DF5C1B9282D6</key>
 		<array>
 			<dict>
@@ -74,18 +50,7 @@
 			</dict>
 		</array>
 		<key>FCEC48A2-9064-4F33-B084-64D77D7695BA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4AE8C30D-2CA1-49D4-8A60-1A92EB3C655A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>magnickolas</string>
@@ -154,15 +119,15 @@ pass_rank/pass_rank "{query}"</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>68</integer>
 				<key>script</key>
-				<string></string>
+				<string>./pass_utils.sh get "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string>scripts/get_password.sh</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -174,56 +139,18 @@ pass_rank/pass_rank "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>980DF2FC-141B-4D1A-8930-6789BB028C99</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>4AE8C30D-2CA1-49D4-8A60-1A92EB3C655A</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>68</integer>
 				<key>script</key>
-				<string></string>
+				<string>./pass_utils.sh get_otp "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string>scripts/get_otp.sh</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -289,15 +216,15 @@ pass_rank/pass_rank "{query}"</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>68</integer>
 				<key>script</key>
-				<string></string>
+				<string>./pass_utils.sh gen "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string>scripts/generate_password.sh</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -327,25 +254,6 @@ pass_rank/pass_rank "{query}"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>44F6D9A0-5BFE-4D55-9E56-F883A6FC040B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -354,35 +262,14 @@ pass_rank/pass_rank "{query}"</string>
 		<key>217B07BD-20C8-4A2F-A650-5389B0301211</key>
 		<dict>
 			<key>xpos</key>
-			<real>285</real>
+			<real>295</real>
 			<key>ypos</key>
 			<real>395</real>
-		</dict>
-		<key>44F6D9A0-5BFE-4D55-9E56-F883A6FC040B</key>
-		<dict>
-			<key>xpos</key>
-			<real>480</real>
-			<key>ypos</key>
-			<real>395</real>
-		</dict>
-		<key>4AE8C30D-2CA1-49D4-8A60-1A92EB3C655A</key>
-		<dict>
-			<key>xpos</key>
-			<real>480</real>
-			<key>ypos</key>
-			<real>245</real>
 		</dict>
 		<key>7ACF8549-8A1E-4C28-ADBC-A897C258182E</key>
 		<dict>
 			<key>xpos</key>
 			<real>295</real>
-			<key>ypos</key>
-			<real>90</real>
-		</dict>
-		<key>980DF2FC-141B-4D1A-8930-6789BB028C99</key>
-		<dict>
-			<key>xpos</key>
-			<real>480</real>
 			<key>ypos</key>
 			<real>90</real>
 		</dict>
@@ -420,7 +307,7 @@ pass_rank/pass_rank "{query}"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1.1</string>
+	<string>0.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/magnickolas/alfred_pass</string>
 </dict>
