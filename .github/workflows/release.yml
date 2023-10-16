@@ -12,10 +12,47 @@ jobs:
       - uses: actions/setup-go@v4
         with:
           go-version: ">=1.16.0"
-      - name: Build AMD64 workflow
+      - name: Import Apple certificate
+        uses: apple-actions/import-codesign-certs@v1
+        with:
+          p12-file-base64: ${{ secrets.APPLE_CERT_DATA }}
+          p12-password: ${{ secrets.APPLE_CERT_PASSWORD }}
+
+      - name: Build AMD64 pass_rank binary
         run: |
-          make ARCH=amd64
-          make ARCH=arm64
+          make -B pass_rank/pass_rank ARCH=amd64
+      - name: Sign AMD64 pass_rank binary
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: codesign -s "$APPLE_TEAM_ID" --timestamp --options runtime pass_rank/pass_rank
+      - name: Build AMD64 workflow
+        run: make ARCH=amd64
+
+      - name: Build ARM64 pass_rank binary
+        run: |
+          rm -f pass_rank/pass_rank
+          make pass_rank/pass_rank ARCH=arm64
+      - name: Sign ARM64 pass_rank binary
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: codesign -s "$APPLE_TEAM_ID" --timestamp --options runtime pass_rank/pass_rank
+      - name: Build ARM64 workflow
+        run: make ARCH=arm64
+
+      - name: Store notarize credentials
+        env:
+          AC_USERNAME: ${{ secrets.AC_USERNAME }}
+          AC_PASSWORD: ${{ secrets.AC_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: xcrun notarytool store-credentials "notarytool-profile" --apple-id "$AC_USERNAME" --team-id "$APPLE_TEAM_ID" --password "$AC_PASSWORD"
+
+      - name: Notarize workflows
+        shell: bash
+        run: |
+          for workflow in pass_rank_amd64.alfredworkflow pass_rank_arm64.alfredworkflow; do
+            xcrun notarytool submit "$workflow" --keychain-profile "notarytool-profile" --wait
+          done
+
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
