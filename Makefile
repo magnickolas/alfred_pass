@@ -1,29 +1,28 @@
-ARCH ?= $(shell uname -m)
+all: pass.alfredworkflow
 
-ifeq ($(ARCH), x86_64)
-override ARCH = amd64
-endif
-
-ifneq ($(ARCH), amd64)
-ifneq ($(ARCH), arm64)
-all:
-	@echo "Error: ARCH is not 'amd64' or 'arm64'"
-	exit 1
-else
-all: pass_rank_$(ARCH).alfredworkflow
-endif
-endif
-
-pass_rank_$(ARCH).alfredworkflow: info.plist icon.png scripts/generate_password.sh scripts/get_otp.sh scripts/get_password.sh pass_rank/pass_rank
+pass.alfredworkflow: info.plist icon.png scripts/generate_password.sh scripts/get_otp.sh scripts/get_password.sh pass_rank/pass_rank
 	zip $@ $^
 
-pass_rank/pass_rank:
-	GOOS=darwin GOARCH=$(ARCH) go build -C pass_rank
+pass_rank/pass_rank: pass_rank/pass_rank_amd64 pass_rank/pass_rank_arm64
+	lipo -create -output $@ $^
+
+define get_binary_from_path
+$(notdir $1)
+endef
+
+define get_target_from_binary
+$(lastword $(subst _, ,$1))
+endef
+
+pass_rank/pass_rank_%:
+	$(eval BINARY := $(call get_binary_from_path,$@))
+	$(eval ARCH := $(call get_target_from_binary,$(BINARY)))
+	GOOS=darwin GOARCH=$(ARCH) go build -C pass_rank -o $(BINARY)
 
 .PHONY: clean
 clean:
-	rm -f pass_rank/pass_rank
+	rm -f pass_rank/pass_rank*
 
 .PHONY: distclean
 distclean: clean
-	rm -f pass_rank_$(ARCH).alfredworkflow
+	rm -f pass.alfredworkflow

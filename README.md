@@ -4,9 +4,9 @@
 
 ## Quickstart
 
-Download the workflow for your architecture (amd64 for Intel chips, arm64 for Apple silicon) and install it in Alfred.
+Download `pass.alfredworkflow` from [the latest release](https://github.com/magnickolas/alfred_pass/releases/latest) and open it.
 
-Type:
+In Alfred bar type:
 
 - `pass <query>` to search for a password (the list will be sorted in ad-hoc relevancy order) and copy it to clipboard
 - `pass-opt <query>` same as above but copy the attached OTP
