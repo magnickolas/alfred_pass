@@ -28,9 +28,7 @@ cd alfred_pass
 make
 ```
 
-This builds the workflow for your architecture in the repo's directory.
-
-To build for another architecture run `make ARCH=amd64` or `make ARCH=arm64` instead of `make`.
+This builds the workflow (universal for both x86_64 and arm64 architectures) in the repo's directory.
 
 [alfred]: https://www.alfredapp.com/
 [pass]: https://www.passwordstore.org/
