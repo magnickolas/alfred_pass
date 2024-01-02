@@ -4,12 +4,40 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.magnickolas.pass</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>217B07BD-20C8-4A2F-A650-5389B0301211</key>
 		<array/>
+		<key>51C44390-5D9F-462F-AAB9-48F6494B0276</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>63E6AB03-B353-40C4-AEDD-DD7E66F1AFB4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7ACF8549-8A1E-4C28-ADBC-A897C258182E</key>
 		<array/>
+		<key>80BA4663-3551-4E92-89EF-171706DF6541</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5FD21FE7-315A-4598-A1C6-6482DC572648</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9E150117-97A7-4F17-98A9-DF5C1B9282D6</key>
 		<array>
 			<dict>
@@ -28,6 +56,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7ACF8549-8A1E-4C28-ADBC-A897C258182E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CCA01A33-DF66-40EE-8353-101CF44F1E3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CC2D2458-6447-47D3-A68D-391B831C063B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -62,6 +103,103 @@
 	<string>pass</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh copy "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/get_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5FD21FE7-315A-4598-A1C6-6482DC572648</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>pass-copy</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>query="{query}"
+
+pass_rank/pass_rank "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Copy password</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>80BA4663-3551-4E92-89EF-171706DF6541</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh get "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/get_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7ACF8549-8A1E-4C28-ADBC-A897C258182E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -100,7 +238,7 @@ pass_rank/pass_rank "{query}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Copy password</string>
+				<string>Type password</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -116,25 +254,53 @@ pass_rank/pass_rank "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>68</integer>
+				<key>keyword</key>
+				<string>pass-otp-copy</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
-				<string>./pass_utils.sh get "{query}"</string>
+				<string>query="{query}"
+
+pass_rank/pass_rank "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
-				<string>scripts/get_password.sh</string>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Copy OTP</string>
 				<key>type</key>
 				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>7ACF8549-8A1E-4C28-ADBC-A897C258182E</string>
+			<string>CCA01A33-DF66-40EE-8353-101CF44F1E3D</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -144,7 +310,7 @@ pass_rank/pass_rank "{query}"</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>./pass_utils.sh get_otp "{query}"</string>
+				<string>./pass_utils.sh copy_otp "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -155,7 +321,7 @@ pass_rank/pass_rank "{query}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>FCEC48A2-9064-4F33-B084-64D77D7695BA</string>
+			<string>CC2D2458-6447-47D3-A68D-391B831C063B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -197,7 +363,7 @@ pass_rank/pass_rank "{query}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Copy OTP</string>
+				<string>Type OTP</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -209,6 +375,50 @@ pass_rank/pass_rank "{query}"</string>
 			<string>9E150117-97A7-4F17-98A9-DF5C1B9282D6</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh get_otp "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/get_otp.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FCEC48A2-9064-4F33-B084-64D77D7695BA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pass-gen-copy</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Generate and copy a password</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>51C44390-5D9F-462F-AAB9-48F6494B0276</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -243,7 +453,7 @@ pass_rank/pass_rank "{query}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Generate a password</string>
+				<string>Generate and type a password</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -253,6 +463,29 @@ pass_rank/pass_rank "{query}"</string>
 			<string>E3D45306-6281-470C-9041-6E9F2495D9A8</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh copy_gen "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/generate_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>63E6AB03-B353-40C4-AEDD-DD7E66F1AFB4</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -266,10 +499,38 @@ pass_rank/pass_rank "{query}"</string>
 			<key>ypos</key>
 			<real>395</real>
 		</dict>
+		<key>51C44390-5D9F-462F-AAB9-48F6494B0276</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>395</real>
+		</dict>
+		<key>5FD21FE7-315A-4598-A1C6-6482DC572648</key>
+		<dict>
+			<key>xpos</key>
+			<real>680</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>63E6AB03-B353-40C4-AEDD-DD7E66F1AFB4</key>
+		<dict>
+			<key>xpos</key>
+			<real>680</real>
+			<key>ypos</key>
+			<real>395</real>
+		</dict>
 		<key>7ACF8549-8A1E-4C28-ADBC-A897C258182E</key>
 		<dict>
 			<key>xpos</key>
 			<real>295</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>80BA4663-3551-4E92-89EF-171706DF6541</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
 			<key>ypos</key>
 			<real>90</real>
 		</dict>
@@ -286,6 +547,20 @@ pass_rank/pass_rank "{query}"</string>
 			<real>100</real>
 			<key>ypos</key>
 			<real>90</real>
+		</dict>
+		<key>CC2D2458-6447-47D3-A68D-391B831C063B</key>
+		<dict>
+			<key>xpos</key>
+			<real>680</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>CCA01A33-DF66-40EE-8353-101CF44F1E3D</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>245</real>
 		</dict>
 		<key>E3D45306-6281-470C-9041-6E9F2495D9A8</key>
 		<dict>
@@ -307,7 +582,7 @@ pass_rank/pass_rank "{query}"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1.2</string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/magnickolas/alfred_pass</string>
 </dict>
