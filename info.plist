@@ -8,13 +8,105 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>217B07BD-20C8-4A2F-A650-5389B0301211</key>
-		<array/>
-		<key>51C44390-5D9F-462F-AAB9-48F6494B0276</key>
+		<key>182C1E2E-856A-443E-BECD-AE9030C0EDA5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>63E6AB03-B353-40C4-AEDD-DD7E66F1AFB4</string>
+				<string>A5A07819-D5C0-4519-8B0E-D0C8D35D36E6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>217B07BD-20C8-4A2F-A650-5389B0301211</key>
+		<array/>
+		<key>2BAD241A-9298-4F81-901E-B4006840A0AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7D221D9-6750-45FC-B2D5-EC155EEEE5B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>37B35C53-F32A-44E5-B895-DCD0F574CEBE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6AD6459F-FABD-4F32-A512-81B2155F4C61</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4E02FFBA-604C-4B2B-BA2E-474604A161E4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9B42D366-F745-429C-9A70-8A28CBE1DFBE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>235F1C7B-7CF9-4B6E-97E0-DD556E30CE1C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>12702046-22A9-4831-A88A-5771BB16F38D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5D5F6E37-D911-4D08-BBEF-654F317E7249</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>87F4F97F-6B2C-4900-A35D-98ACDB2107A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5E1A6620-4D84-4456-A5AA-8B68C27187FF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>217B07BD-20C8-4A2F-A650-5389B0301211</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6AD6459F-FABD-4F32-A512-81B2155F4C61</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ED13C63D-A08B-453A-9C22-0773E0E8E521</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,6 +126,46 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>87F4F97F-6B2C-4900-A35D-98ACDB2107A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5E1A6620-4D84-4456-A5AA-8B68C27187FF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>235F1C7B-7CF9-4B6E-97E0-DD556E30CE1C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>217B07BD-20C8-4A2F-A650-5389B0301211</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9B42D366-F745-429C-9A70-8A28CBE1DFBE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>12702046-22A9-4831-A88A-5771BB16F38D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button1</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -64,6 +196,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A5A07819-D5C0-4519-8B0E-D0C8D35D36E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E02FFBA-604C-4B2B-BA2E-474604A161E4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CCA01A33-DF66-40EE-8353-101CF44F1E3D</key>
 		<array>
 			<dict>
@@ -77,11 +222,50 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D7D221D9-6750-45FC-B2D5-EC155EEEE5B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE77C791-31E6-41EA-811C-07338D792172</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DE77C791-31E6-41EA-811C-07338D792172</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D5F6E37-D911-4D08-BBEF-654F317E7249</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E3D45306-6281-470C-9041-6E9F2495D9A8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>217B07BD-20C8-4A2F-A650-5389B0301211</string>
+				<string>2BAD241A-9298-4F81-901E-B4006840A0AF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>ED13C63D-A08B-453A-9C22-0773E0E8E521</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>182C1E2E-856A-443E-BECD-AE9030C0EDA5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -103,29 +287,6 @@
 	<string>pass</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>./pass_utils.sh copy "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>scripts/get_password.sh</string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5FD21FE7-315A-4598-A1C6-6482DC572648</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -254,6 +415,29 @@ pass_rank/pass_rank "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh copy "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/get_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5FD21FE7-315A-4598-A1C6-6482DC572648</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -301,29 +485,6 @@ pass_rank/pass_rank "{query}"</string>
 			<string>CCA01A33-DF66-40EE-8353-101CF44F1E3D</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>./pass_utils.sh copy_otp "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>scripts/get_otp.sh</string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CC2D2458-6447-47D3-A68D-391B831C063B</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -402,21 +563,44 @@ pass_rank/pass_rank "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh copy_otp "{query}"</string>
+				<key>scriptargtype</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>pass-gen-copy</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Generate and copy a password</string>
-				<key>withspace</key>
-				<true/>
+				<key>scriptfile</key>
+				<string>scripts/get_otp.sh</string>
+				<key>type</key>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>51C44390-5D9F-462F-AAB9-48F6494B0276</string>
+			<string>CC2D2458-6447-47D3-A68D-391B831C063B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Yes</string>
+				<key>button2</key>
+				<string>No</string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string></string>
+				<key>title</key>
+				<string>Overwrite existing password?</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>5E1A6620-4D84-4456-A5AA-8B68C27187FF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -428,7 +612,7 @@ pass_rank/pass_rank "{query}"</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>./pass_utils.sh gen "{query}"</string>
+				<string>osascript -e 'tell application "System Events" to get {title of first application process whose frontmost is true}' | tr -d '\n'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -439,7 +623,7 @@ pass_rank/pass_rank "{query}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>217B07BD-20C8-4A2F-A650-5389B0301211</string>
+			<string>D7D221D9-6750-45FC-B2D5-EC155EEEE5B8</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -472,7 +656,7 @@ pass_rank/pass_rank "{query}"</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>./pass_utils.sh copy_gen "{query}"</string>
+				<string>./pass_utils.sh need_confirm_overwrite "${gen_args}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -483,84 +667,463 @@ pass_rank/pass_rank "{query}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>63E6AB03-B353-40C4-AEDD-DD7E66F1AFB4</string>
+			<string>5D5F6E37-D911-4D08-BBEF-654F317E7249</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>open -a "${focused_app}"
+./pass_utils.sh gen "${gen_args}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/generate_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>217B07BD-20C8-4A2F-A650-5389B0301211</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>ask to confirm</string>
+						<key>uid</key>
+						<string>235F1C7B-7CF9-4B6E-97E0-DD556E30CE1C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>overwrite</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>87F4F97F-6B2C-4900-A35D-98ACDB2107A3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>gen_args</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2BAD241A-9298-4F81-901E-B4006840A0AF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>focused_app</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>DE77C791-31E6-41EA-811C-07338D792172</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Yes</string>
+				<key>button2</key>
+				<string>No</string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string></string>
+				<key>title</key>
+				<string>Overwrite existing password?</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>9B42D366-F745-429C-9A70-8A28CBE1DFBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./pass_utils.sh need_confirm_overwrite "${gen_args}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/generate_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A5A07819-D5C0-4519-8B0E-D0C8D35D36E6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pass-gen-copy</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Generate and copy a password</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>37B35C53-F32A-44E5-B895-DCD0F574CEBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>osascript -e 'tell application "System Events" to get {title of first application process whose frontmost is true}' | tr -d '\n'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/generate_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>ED13C63D-A08B-453A-9C22-0773E0E8E521</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>open -a "${focused_app}"
+./pass_utils.sh copy_gen "${gen_args}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>scripts/generate_password.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>12702046-22A9-4831-A88A-5771BB16F38D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>ask to confirm</string>
+						<key>uid</key>
+						<string>235F1C7B-7CF9-4B6E-97E0-DD556E30CE1C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>overwrite</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>4E02FFBA-604C-4B2B-BA2E-474604A161E4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>focused_app</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>182C1E2E-856A-443E-BECD-AE9030C0EDA5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>gen_args</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>6AD6459F-FABD-4F32-A512-81B2155F4C61</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>12702046-22A9-4831-A88A-5771BB16F38D</key>
+		<dict>
+			<key>note</key>
+			<string>Refocus the application window and copy the password</string>
+			<key>xpos</key>
+			<real>930</real>
+			<key>ypos</key>
+			<real>565</real>
+		</dict>
+		<key>182C1E2E-856A-443E-BECD-AE9030C0EDA5</key>
+		<dict>
+			<key>note</key>
+			<string>Save the title to env var</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>595</real>
+		</dict>
 		<key>217B07BD-20C8-4A2F-A650-5389B0301211</key>
 		<dict>
+			<key>note</key>
+			<string>Refocus the application window and type the password</string>
 			<key>xpos</key>
-			<real>295</real>
+			<real>930</real>
 			<key>ypos</key>
 			<real>395</real>
 		</dict>
-		<key>51C44390-5D9F-462F-AAB9-48F6494B0276</key>
+		<key>2BAD241A-9298-4F81-901E-B4006840A0AF</key>
+		<dict>
+			<key>note</key>
+			<string>Save `pass generate` arguments to env var</string>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
+		<key>37B35C53-F32A-44E5-B895-DCD0F574CEBE</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>100</real>
+			<key>ypos</key>
+			<real>565</real>
+		</dict>
+		<key>4E02FFBA-604C-4B2B-BA2E-474604A161E4</key>
+		<dict>
+			<key>note</key>
+			<string>Ask to confirm to overwrite the password if it already exists</string>
+			<key>xpos</key>
+			<real>735</real>
+			<key>ypos</key>
+			<real>585</real>
+		</dict>
+		<key>5D5F6E37-D911-4D08-BBEF-654F317E7249</key>
+		<dict>
+			<key>note</key>
+			<string>Find out if the password already exists</string>
+			<key>xpos</key>
+			<real>595</real>
 			<key>ypos</key>
 			<real>395</real>
+		</dict>
+		<key>5E1A6620-4D84-4456-A5AA-8B68C27187FF</key>
+		<dict>
+			<key>xpos</key>
+			<real>860</real>
+			<key>ypos</key>
+			<real>375</real>
 		</dict>
 		<key>5FD21FE7-315A-4598-A1C6-6482DC572648</key>
 		<dict>
 			<key>xpos</key>
-			<real>680</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>90</real>
+			<real>105</real>
 		</dict>
-		<key>63E6AB03-B353-40C4-AEDD-DD7E66F1AFB4</key>
+		<key>6AD6459F-FABD-4F32-A512-81B2155F4C61</key>
 		<dict>
+			<key>note</key>
+			<string>Save `pass generate` arguments to env var</string>
 			<key>xpos</key>
-			<real>680</real>
+			<real>260</real>
 			<key>ypos</key>
-			<real>395</real>
+			<real>595</real>
 		</dict>
 		<key>7ACF8549-8A1E-4C28-ADBC-A897C258182E</key>
 		<dict>
 			<key>xpos</key>
 			<real>295</real>
 			<key>ypos</key>
-			<real>90</real>
+			<real>105</real>
 		</dict>
 		<key>80BA4663-3551-4E92-89EF-171706DF6541</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>495</real>
 			<key>ypos</key>
-			<real>90</real>
+			<real>105</real>
+		</dict>
+		<key>87F4F97F-6B2C-4900-A35D-98ACDB2107A3</key>
+		<dict>
+			<key>note</key>
+			<string>Ask to confirm to overwrite the password if it already exists</string>
+			<key>xpos</key>
+			<real>735</real>
+			<key>ypos</key>
+			<real>415</real>
+		</dict>
+		<key>9B42D366-F745-429C-9A70-8A28CBE1DFBE</key>
+		<dict>
+			<key>xpos</key>
+			<real>860</real>
+			<key>ypos</key>
+			<real>545</real>
 		</dict>
 		<key>9E150117-97A7-4F17-98A9-DF5C1B9282D6</key>
 		<dict>
 			<key>xpos</key>
 			<real>100</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>250</real>
 		</dict>
 		<key>A1922F6C-06DE-439B-BE2F-645000736C40</key>
 		<dict>
 			<key>xpos</key>
 			<real>100</real>
 			<key>ypos</key>
-			<real>90</real>
+			<real>105</real>
+		</dict>
+		<key>A5A07819-D5C0-4519-8B0E-D0C8D35D36E6</key>
+		<dict>
+			<key>note</key>
+			<string>Find out if the password already exists</string>
+			<key>xpos</key>
+			<real>595</real>
+			<key>ypos</key>
+			<real>565</real>
 		</dict>
 		<key>CC2D2458-6447-47D3-A68D-391B831C063B</key>
 		<dict>
 			<key>xpos</key>
-			<real>680</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>250</real>
 		</dict>
 		<key>CCA01A33-DF66-40EE-8353-101CF44F1E3D</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>495</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>250</real>
+		</dict>
+		<key>D7D221D9-6750-45FC-B2D5-EC155EEEE5B8</key>
+		<dict>
+			<key>note</key>
+			<string>Save the title of the currently focused application</string>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>395</real>
+		</dict>
+		<key>DE77C791-31E6-41EA-811C-07338D792172</key>
+		<dict>
+			<key>note</key>
+			<string>Save the title to env var</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>425</real>
 		</dict>
 		<key>E3D45306-6281-470C-9041-6E9F2495D9A8</key>
 		<dict>
@@ -569,12 +1132,21 @@ pass_rank/pass_rank "{query}"</string>
 			<key>ypos</key>
 			<real>395</real>
 		</dict>
+		<key>ED13C63D-A08B-453A-9C22-0773E0E8E521</key>
+		<dict>
+			<key>note</key>
+			<string>Save the title of the currently focused application</string>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>565</real>
+		</dict>
 		<key>FCEC48A2-9064-4F33-B084-64D77D7695BA</key>
 		<dict>
 			<key>xpos</key>
 			<real>295</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>250</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -582,7 +1154,7 @@ pass_rank/pass_rank "{query}"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/magnickolas/alfred_pass</string>
 </dict>
